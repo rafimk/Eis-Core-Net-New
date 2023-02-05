@@ -1,0 +1,24 @@
+{
+    "BrokerConfiguration": {     
+        "protocol": "amqp://",
+        "url": "localhost:5672",
+        "username": "test",     
+        "password":"test",  
+        "CronExpression":"0/20 * 1/1 ? * *",
+        "RefreshInterval": 1
+    },
+
+      "ApplicationSettings": [{
+        "Name":"FLYING_PROCESS",      
+        "OutboundTopic": "topic.outbound.flying.activity",
+        "InboundQueue": "queue.inbound.flying.activity"
+      },
+      {
+        "Name":"MDM",      
+        "OutboundTopic": "topic.outbound.mdm",
+        "InboundQueue":"queue.inbound.mdm"
+       
+      }
+    ]
+    
+}

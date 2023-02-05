@@ -1,0 +1,1064 @@
+02/04/2023 12:46:31 +04:00 Information Applicaiton booting up... 
+ 02/04/2023 12:46:31 +04:00 Information ConfigurationManager constructor 
+ 02/04/2023 12:46:31 +04:00 Information Loading application configurations.... 
+ 02/04/2023 12:46:31 +04:00 Information Returning::FLYING_PROCESS outbound: topic.outbound.flying.activity inbound: queue.inbound.flying.activity 
+ 02/04/2023 12:46:31 +04:00 Information BindAppSettingsToObjects::FLYING_PROCESS 
+ 02/04/2023 12:46:31 +04:00 Information loading : "EisCore.eissettings.development.json" 
+ 02/04/2023 12:46:31 +04:00 Information Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl 
+ 02/04/2023 12:46:31 +04:00 Information Quartz Scheduler created 
+ 02/04/2023 12:46:31 +04:00 Information RAMJobStore initialized. 
+ 02/04/2023 12:46:31 +04:00 Information Scheduler meta-data: Quartz Scheduler (v3.4.0.0) 'ConsumerQuartzScheduler' with instanceId 'ConsumerQuartzInstance'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 1 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+ 02/04/2023 12:46:31 +04:00 Information Quartz scheduler 'ConsumerQuartzScheduler' initialized 
+ 02/04/2023 12:46:31 +04:00 Information Quartz scheduler version: 3.4.0.0 
+ 02/04/2023 12:46:31 +04:00 Information JobFactory set to: EisCore.JobFactory 
+ 02/04/2023 12:46:31 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance started. 
+ 02/04/2023 12:46:31 +04:00 Information BrokerConnectionFactory >> Initializing broker connections. 
+ 02/04/2023 12:46:31 +04:00 Information Broker - "failover:(amqp://localhost:5672)" 
+ 02/04/2023 12:46:31 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:46:31 +04:00 Information CreateConsumer _ConsumerConnection: >>  << 
+ 02/04/2023 12:46:31 +04:00 Information Creating new consumer broker connection 
+ 02/04/2023 12:46:31 +04:00 Information Broker - "failover:(amqp://localhost:5672)" 
+ 02/04/2023 12:46:31 +04:00 Information connection created, client id set 
+ 02/04/2023 12:46:31 +04:00 Information Creating session 
+ 02/04/2023 12:46:31 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:46:31 +04:00 Information Now listening on: "http://localhost:5000" 
+ 02/04/2023 12:46:31 +04:00 Information Application started. Press Ctrl+C to shut down. 
+ 02/04/2023 12:46:31 +04:00 Information Hosting environment: "Development" 
+ 02/04/2023 12:46:31 +04:00 Information Content root path: "C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net" 
+ 02/04/2023 12:46:32 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger - - 
+ 02/04/2023 12:46:32 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger - - - 301 0 - 50.6145ms 
+ 02/04/2023 12:46:32 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - 
+ 02/04/2023 12:46:32 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 94.3646ms 
+ 02/04/2023 12:46:32 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - - 
+ 02/04/2023 12:46:32 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - - 
+ 02/04/2023 12:46:32 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - - 
+ 02/04/2023 12:46:32 +04:00 Information Sending file. Request path: '"/swagger-ui.css"'. Physical path: '"N/A"' 
+ 02/04/2023 12:46:32 +04:00 Information Sending file. Request path: '"/swagger-ui-standalone-preset.js"'. Physical path: '"N/A"' 
+ 02/04/2023 12:46:32 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui.css - - - 200 143821 text/css 60.4609ms 
+ 02/04/2023 12:46:32 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-standalone-preset.js - - - 200 319705 application/javascript 62.0510ms 
+ 02/04/2023 12:46:32 +04:00 Information Sending file. Request path: '"/swagger-ui-bundle.js"'. Physical path: '"N/A"' 
+ 02/04/2023 12:46:32 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/swagger-ui-bundle.js - - - 200 1079362 application/javascript 59.1877ms 
+ 02/04/2023 12:46:33 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - 
+ 02/04/2023 12:46:33 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - - 
+ 02/04/2023 12:46:33 +04:00 Information Sending file. Request path: '"/favicon-32x32.png"'. Physical path: '"N/A"' 
+ 02/04/2023 12:46:33 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/favicon-32x32.png - - - 200 628 image/png 30.8428ms 
+ 02/04/2023 12:46:33 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 173.0157ms 
+ 02/04/2023 12:46:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:46:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:46:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:46:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:46:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:46:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:46:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:46:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:46:44 +04:00 Information Request starting HTTP/1.1 POST http://localhost:5000/EventPublisher/message application/json 114 
+ 02/04/2023 12:46:45 +04:00 Information Executing endpoint '"event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)"' 
+ 02/04/2023 12:46:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:46:45 +04:00 Information Route matched with "{action = \"Publish\", controller = \"EventPublisher\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Publish(EisCore.Domain.Entities.Payload)" on controller "event_publisher_net.Controllers.EventPublisherController" ("event-publisher-net"). 
+ 02/04/2023 12:46:45 +04:00 Information ###-Controller Publishing-- "string" -------### 
+ 02/04/2023 12:46:45 +04:00 Information sending object 
+ 02/04/2023 12:46:45 +04:00 Information OUTBOX::NEW [Insert] status: 1 
+ 02/04/2023 12:46:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:46:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:47:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:47:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:47:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:47:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:47:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:47:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:47:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:47:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:47:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:47:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:47:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:47:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:47:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:47:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:47:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:47:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:47:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:47:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:47:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:48:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:48:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:48:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:48:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:48:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:48:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:48:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:48:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:48:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:48:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:48:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:48:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:40 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:48:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:48:40 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:48:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:48:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:49:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:49:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:49:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:49:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:49:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:49:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:49:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:49:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:49:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:49:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:49:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:49:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:49:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:49:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:49:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:49:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:49:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:49:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:49:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:50:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:50:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:50:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:50:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:50:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:50:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:50:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:50:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:50:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:50:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:50:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:50:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:50:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:50:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:50:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:50:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:50:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:50:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:50:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:00 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:51:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:51:00 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:51:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:51:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:51:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:51:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:51:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:51:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:51:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:51:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:51:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:51:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:51:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:51:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:51:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:51:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:52:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:52:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:52:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:52:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:52:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:52:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:52:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:52:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:52:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:52:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:52:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:52:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:52:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:52:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:52:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:52:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:52:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:52:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:52:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:53:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:53:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:53:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:53:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:53:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:53:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:20 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:53:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:53:20 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:53:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:53:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:53:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:53:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:53:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:53:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:53:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:53:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:54:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:54:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:54:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:54:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:54:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:54:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:54:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:54:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:54:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:54:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:54:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:54:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:54:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:54:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:54:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:54:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:54:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:54:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:54:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:55:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:55:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:55:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:55:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:55:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:55:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:20 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:55:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:55:20 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:55:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:55:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:55:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:55:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:55:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:55:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:55:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:55:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:56:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:56:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:56:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:56:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:56:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:56:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:56:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:56:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:56:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:56:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:56:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:56:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:56:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:56:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:56:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:56:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:56:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:56:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:56:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:57:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:57:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:57:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:57:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:57:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:57:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:57:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:57:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:57:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:57:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:57:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:57:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:40 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:57:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:57:40 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:57:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:57:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:58:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:58:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:58:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:58:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:58:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:58:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:58:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:58:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:58:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:58:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:58:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:58:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:58:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:58:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:58:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:58:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:58:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:58:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:58:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:59:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:59:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:59:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:59:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:59:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:59:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 12:59:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 12:59:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 12:59:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 12:59:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:59:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 12:59:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:40 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 12:59:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 12:59:40 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 12:59:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 12:59:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:00:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:00:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:00:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:00:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:00:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:00:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:00:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:00:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:00:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:00:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:00:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:00:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:00:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:00:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:00:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:00:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:00:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:00:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:00:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:01:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:01:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:01:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:01:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:01:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:01:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:01:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:01:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:01:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:01:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:01:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:01:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:01:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:01:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:01:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:01:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:01:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:01:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:01:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:00 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:02:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:02:00 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:02:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:02:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:02:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:02:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:02:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:02:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:02:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:02:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:02:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:02:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:02:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:02:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:02:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:02:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:03:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:03:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:03:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:03:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:03:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:03:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:03:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:03:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:03:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:03:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:03:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:03:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:03:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:03:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:03:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:03:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:03:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:03:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:03:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:04:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:04:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:04:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:04:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:04:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:04:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:20 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:04:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:04:20 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:04:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:04:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:04:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:04:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:04:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:04:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:04:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:04:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:05:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:05:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:05:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:05:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:05:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:05:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:05:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:05:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:05:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:05:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:05:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:05:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:05:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:05:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:05:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:05:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:05:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:05:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:05:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:06:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:06:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:06:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:06:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:06:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:06:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:20 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:06:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:06:20 +04:00 Information *** Consumer locked for: "d052b985-471a-4ab6-80f3-7c4ae8663bcd" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:06:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:06:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:06:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:06:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:06:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:06:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:06:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:06:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:07:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:07:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:07:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:07:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:07:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:07:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:07:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:07:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:07:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:07:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:07:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:07:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:07:40 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:07:40 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:07:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:07:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:07:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:07:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:07:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:08:00 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:08:00 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:08:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:08:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:08:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:08:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:08:20 +04:00 Information IP address from query: [ "d052b985-471a-4ab6-80f3-7c4ae8663bcd" ] 
+ 02/04/2023 13:08:20 +04:00 Information Current IP: [d052b985-471a-4ab6-80f3-7c4ae8663bcd] 
+ 02/04/2023 13:08:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:08:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:08:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:08:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:24 +04:00 Information Application is shutting down... 
+ 02/04/2023 13:08:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:08:30 +04:00 Information Scheduler "ConsumerQuartzScheduler_$_ConsumerQuartzInstance" shutting down. 
+ 02/04/2023 13:08:30 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance paused. 
+ 02/04/2023 13:08:30 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance Shutdown complete. 
+ 02/04/2023 13:08:30 +04:00 Information DestroyConsumerConnection - called, IsTransportInterrupted: True 
+ 02/04/2023 13:08:30 +04:00 Information DestroyConsumerConnection Transport already stopped 
+ 02/04/2023 13:08:30 +04:00 Information DestroyProducerConnection - called 
+ 02/04/2023 13:08:30 +04:00 Information DestroyProducerConnection stopped transport 
+ 02/04/2023 13:10:04 +04:00 Information Applicaiton booting up... 
+ 02/04/2023 13:10:04 +04:00 Information ConfigurationManager constructor 
+ 02/04/2023 13:10:04 +04:00 Information Loading application configurations.... 
+ 02/04/2023 13:10:05 +04:00 Information Returning::FLYING_PROCESS outbound: topic.outbound.flying.activity inbound: queue.inbound.flying.activity 
+ 02/04/2023 13:10:05 +04:00 Information BindAppSettingsToObjects::FLYING_PROCESS 
+ 02/04/2023 13:10:05 +04:00 Information loading : "EisCore.eissettings.development.json" 
+ 02/04/2023 13:10:05 +04:00 Information Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl 
+ 02/04/2023 13:10:05 +04:00 Information Quartz Scheduler created 
+ 02/04/2023 13:10:05 +04:00 Information RAMJobStore initialized. 
+ 02/04/2023 13:10:05 +04:00 Information Scheduler meta-data: Quartz Scheduler (v3.4.0.0) 'ConsumerQuartzScheduler' with instanceId 'ConsumerQuartzInstance'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 1 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+ 02/04/2023 13:10:05 +04:00 Information Quartz scheduler 'ConsumerQuartzScheduler' initialized 
+ 02/04/2023 13:10:05 +04:00 Information Quartz scheduler version: 3.4.0.0 
+ 02/04/2023 13:10:05 +04:00 Information JobFactory set to: EisCore.JobFactory 
+ 02/04/2023 13:10:05 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance started. 
+ 02/04/2023 13:10:05 +04:00 Information BrokerConnectionFactory >> Initializing broker connections. 
+ 02/04/2023 13:10:05 +04:00 Information Broker - "(amqp://localhost:5672)" 
+ 02/04/2023 13:10:05 +04:00 Error An error occurred instantiating job to be executed. job= 'DEFAULT.EisCore.Infrastructure.Services.InboxOutboxPollerJob, message=Invalid URI: The URI scheme is not valid.' 
+ Quartz.SchedulerException: Problem instantiating type 'EisCore.Infrastructure.Services.InboxOutboxPollerJob: Invalid URI: The URI scheme is not valid.'
+ ---> System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at EisCore.Infrastructure.Configuration.BrokerConnectionFactory..ctor(ILogger`1 log, IConfigurationManager configurationManager, BrokerConfiguration brokerConfig, IEventInboxOutboxDbContext eventINOUTDbContext, EventHandlerRegistry eventHandlerRegistry) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Configuration\BrokerConnectionFactory.cs:line 55
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at EisCore.JobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Scheduler\JobFactory.cs:line 19
+   at Quartz.Core.JobRunShell.Initialize(QuartzScheduler sched, CancellationToken cancellationToken)
+   --- End of inner exception stack trace --- [See nested exception: System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at EisCore.Infrastructure.Configuration.BrokerConnectionFactory..ctor(ILogger`1 log, IConfigurationManager configurationManager, BrokerConfiguration brokerConfig, IEventInboxOutboxDbContext eventINOUTDbContext, EventHandlerRegistry eventHandlerRegistry) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Configuration\BrokerConnectionFactory.cs:line 55
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetRequiredService(IServiceProvider provider, Type serviceType)
+   at EisCore.JobFactory.NewJob(TriggerFiredBundle bundle, IScheduler scheduler) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Scheduler\JobFactory.cs:line 19
+   at Quartz.Core.JobRunShell.Initialize(QuartzScheduler sched, CancellationToken cancellationToken)]
+02/04/2023 13:10:05 +04:00 Information BrokerConnectionFactory >> Initializing broker connections. 
+ 02/04/2023 13:10:05 +04:00 Information Broker - "(amqp://localhost:5672)" 
+ 02/04/2023 13:10:05 +04:00 Fatal Application startup exception 
+ System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at EisCore.Infrastructure.Configuration.BrokerConnectionFactory..ctor(ILogger`1 log, IConfigurationManager configurationManager, BrokerConfiguration brokerConfig, IEventInboxOutboxDbContext eventINOUTDbContext, EventHandlerRegistry eventHandlerRegistry) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Configuration\BrokerConnectionFactory.cs:line 55
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at event_publisher_net.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net\src\Startup.cs:line 66
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+02/04/2023 13:10:05 +04:00 Information All triggers of Job DEFAULT.EisCore.Infrastructure.Services.InboxOutboxPollerJob set to ERROR state. 
+ 02/04/2023 13:10:05 +04:00 Fatal The application failed to start correctly. 
+ System.UriFormatException: Invalid URI: The URI scheme is not valid.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind, UriCreationOptions& creationOptions)
+   at System.Uri..ctor(String uriString)
+   at EisCore.Infrastructure.Configuration.BrokerConnectionFactory..ctor(ILogger`1 log, IConfigurationManager configurationManager, BrokerConfiguration brokerConfig, IEventInboxOutboxDbContext eventINOUTDbContext, EventHandlerRegistry eventHandlerRegistry) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\eis-core-net\src\Infrastructure\Configuration\BrokerConnectionFactory.cs:line 55
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeConstructorInfo.Invoke(BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitConstructor(ConstructorCallSite constructorCallSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSiteMain(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.VisitRootCache(ServiceCallSite callSite, RuntimeResolverContext context)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteVisitor`2.VisitCallSite(ServiceCallSite callSite, TArgument argument)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteRuntimeResolver.Resolve(ServiceCallSite callSite, ServiceProviderEngineScope scope)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.CreateServiceAccessor(Type serviceType)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.GetService(Type serviceType, ServiceProviderEngineScope serviceProviderEngineScope)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.ServiceProviderEngineScope.GetService(Type serviceType)
+   at Microsoft.Extensions.DependencyInjection.ServiceProviderServiceExtensions.GetService[T](IServiceProvider provider)
+   at event_publisher_net.Startup.Configure(IApplicationBuilder app, IWebHostEnvironment env) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net\src\Startup.cs:line 66
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Span`1& arguments, Signature sig, Boolean constructor, Boolean wrapExceptions)
+   at System.Reflection.RuntimeMethodInfo.Invoke(Object obj, BindingFlags invokeAttr, Binder binder, Object[] parameters, CultureInfo culture)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.Invoke(Object instance, IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.ConfigureBuilder.<>c__DisplayClass4_0.<Build>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostBuilder.<>c__DisplayClass15_0.<UseStartup>b__1(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Mvc.Filters.MiddlewareFilterBuilderStartupFilter.<>c__DisplayClass0_0.<Configure>g__MiddlewareFilterBuilder|0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.RunAsync(IHost host, CancellationToken token)
+   at Microsoft.Extensions.Hosting.HostingAbstractionsHostExtensions.Run(IHost host)
+   at event_publisher_net.Program.Main(String[] args) in C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net\src\Program.cs:line 28
+02/04/2023 13:10:57 +04:00 Information Applicaiton booting up... 
+ 02/04/2023 13:10:57 +04:00 Information ConfigurationManager constructor 
+ 02/04/2023 13:10:57 +04:00 Information Loading application configurations.... 
+ 02/04/2023 13:10:57 +04:00 Information Returning::FLYING_PROCESS outbound: topic.outbound.flying.activity inbound: queue.inbound.flying.activity 
+ 02/04/2023 13:10:57 +04:00 Information BindAppSettingsToObjects::FLYING_PROCESS 
+ 02/04/2023 13:10:57 +04:00 Information loading : "EisCore.eissettings.development.json" 
+ 02/04/2023 13:10:57 +04:00 Information Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl 
+ 02/04/2023 13:10:57 +04:00 Information Quartz Scheduler created 
+ 02/04/2023 13:10:57 +04:00 Information RAMJobStore initialized. 
+ 02/04/2023 13:10:57 +04:00 Information Scheduler meta-data: Quartz Scheduler (v3.4.0.0) 'ConsumerQuartzScheduler' with instanceId 'ConsumerQuartzInstance'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 1 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+ 02/04/2023 13:10:57 +04:00 Information Quartz scheduler 'ConsumerQuartzScheduler' initialized 
+ 02/04/2023 13:10:57 +04:00 Information Quartz scheduler version: 3.4.0.0 
+ 02/04/2023 13:10:57 +04:00 Information JobFactory set to: EisCore.JobFactory 
+ 02/04/2023 13:10:57 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance started. 
+ 02/04/2023 13:10:57 +04:00 Information BrokerConnectionFactory >> Initializing broker connections. 
+ 02/04/2023 13:10:57 +04:00 Information Broker - "amqp://localhost:5672" 
+ 02/04/2023 13:10:57 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:10:57 +04:00 Information CreateConsumer _ConsumerConnection: >>  << 
+ 02/04/2023 13:10:57 +04:00 Information Creating new consumer broker connection 
+ 02/04/2023 13:10:57 +04:00 Information Broker - "amqp://localhost:5672" 
+ 02/04/2023 13:10:57 +04:00 Information connection created, client id set 
+ 02/04/2023 13:10:57 +04:00 Information Creating session 
+ 02/04/2023 13:10:57 +04:00 Information *** Consumer locked for: "bc4ced32-0e29-4b70-b81d-3fa6a9c31f64" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:10:57 +04:00 Information Now listening on: "http://localhost:5000" 
+ 02/04/2023 13:10:57 +04:00 Information Application started. Press Ctrl+C to shut down. 
+ 02/04/2023 13:10:57 +04:00 Information Hosting environment: "Development" 
+ 02/04/2023 13:10:57 +04:00 Information Content root path: "C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net" 
+ 02/04/2023 13:10:58 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - 
+ 02/04/2023 13:10:58 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 174.9813ms 
+ 02/04/2023 13:10:59 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - 
+ 02/04/2023 13:10:59 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 259.5932ms 
+ 02/04/2023 13:11:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:11:00 +04:00 Information IP address from query: [ "bc4ced32-0e29-4b70-b81d-3fa6a9c31f64" ] 
+ 02/04/2023 13:11:00 +04:00 Information Current IP: [bc4ced32-0e29-4b70-b81d-3fa6a9c31f64] 
+ 02/04/2023 13:11:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:11:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:11:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:11:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:11:20 +04:00 Information IP address from query: [ "bc4ced32-0e29-4b70-b81d-3fa6a9c31f64" ] 
+ 02/04/2023 13:11:20 +04:00 Information Current IP: [bc4ced32-0e29-4b70-b81d-3fa6a9c31f64] 
+ 02/04/2023 13:11:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:11:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:11:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:11:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:11:40 +04:00 Information IP address from query: [ "bc4ced32-0e29-4b70-b81d-3fa6a9c31f64" ] 
+ 02/04/2023 13:11:40 +04:00 Information Current IP: [bc4ced32-0e29-4b70-b81d-3fa6a9c31f64] 
+ 02/04/2023 13:11:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:11:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:11:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:11:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:11:41 +04:00 Information Application is shutting down... 
+ 02/04/2023 13:11:41 +04:00 Information Scheduler "ConsumerQuartzScheduler_$_ConsumerQuartzInstance" shutting down. 
+ 02/04/2023 13:11:41 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance paused. 
+ 02/04/2023 13:11:41 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance Shutdown complete. 
+ 02/04/2023 13:11:41 +04:00 Information DestroyConsumerConnection - called, IsTransportInterrupted: True 
+ 02/04/2023 13:11:41 +04:00 Information DestroyConsumerConnection Transport already stopped 
+ 02/04/2023 13:11:41 +04:00 Information DestroyProducerConnection - called 
+ 02/04/2023 13:11:41 +04:00 Information DestroyProducerConnection stopped transport 
+ 02/04/2023 13:13:24 +04:00 Information Applicaiton booting up... 
+ 02/04/2023 13:13:24 +04:00 Information ConfigurationManager constructor 
+ 02/04/2023 13:13:24 +04:00 Information Loading application configurations.... 
+ 02/04/2023 13:13:24 +04:00 Information Returning::FLYING_PROCESS outbound: topic.outbound.flying.activity inbound: queue.inbound.flying.activity 
+ 02/04/2023 13:13:24 +04:00 Information BindAppSettingsToObjects::FLYING_PROCESS 
+ 02/04/2023 13:13:24 +04:00 Information loading : "EisCore.eissettings.development.json" 
+ 02/04/2023 13:13:24 +04:00 Information Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl 
+ 02/04/2023 13:13:24 +04:00 Information Quartz Scheduler created 
+ 02/04/2023 13:13:24 +04:00 Information RAMJobStore initialized. 
+ 02/04/2023 13:13:24 +04:00 Information Scheduler meta-data: Quartz Scheduler (v3.4.0.0) 'ConsumerQuartzScheduler' with instanceId 'ConsumerQuartzInstance'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.DefaultThreadPool' - with 1 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+ 
+ 02/04/2023 13:13:24 +04:00 Information Quartz scheduler 'ConsumerQuartzScheduler' initialized 
+ 02/04/2023 13:13:24 +04:00 Information Quartz scheduler version: 3.4.0.0 
+ 02/04/2023 13:13:24 +04:00 Information JobFactory set to: EisCore.JobFactory 
+ 02/04/2023 13:13:24 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance started. 
+ 02/04/2023 13:13:25 +04:00 Information BrokerConnectionFactory >> Initializing broker connections. 
+ 02/04/2023 13:13:25 +04:00 Information Broker - "amqp://localhost:5672" 
+ 02/04/2023 13:13:25 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:13:25 +04:00 Information CreateConsumer _ConsumerConnection: >>  << 
+ 02/04/2023 13:13:25 +04:00 Information Creating new consumer broker connection 
+ 02/04/2023 13:13:25 +04:00 Information Broker - "amqp://localhost:5672" 
+ 02/04/2023 13:13:25 +04:00 Information connection created, client id set 
+ 02/04/2023 13:13:25 +04:00 Information Creating session 
+ 02/04/2023 13:13:25 +04:00 Information *** Consumer locked for: "f34d7b76-a66a-41e3-a843-fb086f3db5bf" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:13:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:25 +04:00 Information Now listening on: "http://localhost:5000" 
+ 02/04/2023 13:13:25 +04:00 Information Application started. Press Ctrl+C to shut down. 
+ 02/04/2023 13:13:25 +04:00 Information Hosting environment: "Development" 
+ 02/04/2023 13:13:25 +04:00 Information Content root path: "C:\Projects\POC\dot-net-core-eis\EisCore-Net\event-publisher-net" 
+ 02/04/2023 13:13:25 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/index.html - - 
+ 02/04/2023 13:13:26 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/index.html - - - 200 - text/html;charset=utf-8 191.0063ms 
+ 02/04/2023 13:13:26 +04:00 Information Request starting HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - 
+ 02/04/2023 13:13:26 +04:00 Information Request finished HTTP/1.1 GET http://localhost:5000/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 198.3962ms 
+ 02/04/2023 13:13:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:13:40 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:13:40 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:13:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:13:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:13:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:13:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:42 +04:00 Information Request starting HTTP/1.1 POST http://localhost:5000/EventPublisher/message application/json 114 
+ 02/04/2023 13:13:42 +04:00 Information Executing endpoint '"event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)"' 
+ 02/04/2023 13:13:42 +04:00 Information Route matched with "{action = \"Publish\", controller = \"EventPublisher\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Publish(EisCore.Domain.Entities.Payload)" on controller "event_publisher_net.Controllers.EventPublisherController" ("event-publisher-net"). 
+ 02/04/2023 13:13:42 +04:00 Information ###-Controller Publishing-- "string" -------### 
+ 02/04/2023 13:13:42 +04:00 Information sending object 
+ 02/04/2023 13:13:42 +04:00 Information Time taken 1 ms from Controller 
+ 02/04/2023 13:13:42 +04:00 Information Executing "OkObjectResult", writing value of type '"EisCore.Domain.Entities.Payload"'. 
+ 02/04/2023 13:13:42 +04:00 Information Executed action "event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)" in 28.4095ms 
+ 02/04/2023 13:13:42 +04:00 Information Executed endpoint '"event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)"' 
+ 02/04/2023 13:13:42 +04:00 Information Request finished HTTP/1.1 POST http://localhost:5000/EventPublisher/message application/json 114 - 200 - application/json;+charset=utf-8 73.1316ms 
+ 02/04/2023 13:13:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:13:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:14:00 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:14:00 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:14:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:14:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:14:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:14:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:14:20 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:14:20 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:14:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:14:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:14:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:14:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:40 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:14:40 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:14:40 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:14:40 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:14:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:14:40 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:14:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:14:51 +04:00 Information Request starting HTTP/1.1 POST http://localhost:5000/EventPublisher/message application/json 114 
+ 02/04/2023 13:14:51 +04:00 Information Executing endpoint '"event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)"' 
+ 02/04/2023 13:14:51 +04:00 Information Route matched with "{action = \"Publish\", controller = \"EventPublisher\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult Publish(EisCore.Domain.Entities.Payload)" on controller "event_publisher_net.Controllers.EventPublisherController" ("event-publisher-net"). 
+ 02/04/2023 13:14:51 +04:00 Information ###-Controller Publishing-- "string" -------### 
+ 02/04/2023 13:14:51 +04:00 Information sending object 
+ 02/04/2023 13:14:51 +04:00 Information Time taken 1 ms from Controller 
+ 02/04/2023 13:14:51 +04:00 Information Executing "OkObjectResult", writing value of type '"EisCore.Domain.Entities.Payload"'. 
+ 02/04/2023 13:14:51 +04:00 Information Executed action "event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)" in 6.5181ms 
+ 02/04/2023 13:14:51 +04:00 Information Executed endpoint '"event_publisher_net.Controllers.EventPublisherController.Publish (event-publisher-net)"' 
+ 02/04/2023 13:14:51 +04:00 Information Request finished HTTP/1.1 POST http://localhost:5000/EventPublisher/message application/json 114 - 200 - application/json;+charset=utf-8 19.2451ms 
+ 02/04/2023 13:14:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:15:00 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:15:00 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:15:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:15:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:15:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:15:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:20 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:15:20 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:15:20 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:15:20 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:15:20 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:15:20 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:15:20 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:25 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:30 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:35 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:40 +04:00 Information Stale entry delete status:1 
+ 02/04/2023 13:15:40 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:15:40 +04:00 Information *** Consumer locked for: "f34d7b76-a66a-41e3-a843-fb086f3db5bf" in group: "FLYING_PROCESS_COMPETING_CONSUMER_GROUP" 
+ 02/04/2023 13:15:40 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:45 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:50 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:15:55 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:16:00 +04:00 Information Stale entry delete status:0 
+ 02/04/2023 13:16:00 +04:00 Information IP address from query: [ "f34d7b76-a66a-41e3-a843-fb086f3db5bf" ] 
+ 02/04/2023 13:16:00 +04:00 Information Current IP: [f34d7b76-a66a-41e3-a843-fb086f3db5bf] 
+ 02/04/2023 13:16:00 +04:00 Information IsIPAddressMatchesWithGroupEntry(IpAddress): True 
+ 02/04/2023 13:16:00 +04:00 Information CreateConsumer _ConsumerConnection: >> Apache.NMS.AMQP.NmsConnection << 
+ 02/04/2023 13:16:00 +04:00 Fatal Broker is down. Connection Interrupted 
+ 02/04/2023 13:16:00 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:16:05 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:16:10 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:16:15 +04:00 Information QuartzInboxOutboxPollerJob >> not locked for broker connection 
+ 02/04/2023 13:16:16 +04:00 Information Application is shutting down... 
+ 02/04/2023 13:16:16 +04:00 Information Scheduler "ConsumerQuartzScheduler_$_ConsumerQuartzInstance" shutting down. 
+ 02/04/2023 13:16:16 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance paused. 
+ 02/04/2023 13:16:16 +04:00 Information Scheduler ConsumerQuartzScheduler_$_ConsumerQuartzInstance Shutdown complete. 
+ 02/04/2023 13:16:16 +04:00 Information DestroyConsumerConnection - called, IsTransportInterrupted: True 
+ 02/04/2023 13:16:16 +04:00 Information DestroyConsumerConnection Transport already stopped 
+ 02/04/2023 13:16:16 +04:00 Information DestroyProducerConnection - called 
+ 02/04/2023 13:16:16 +04:00 Information DestroyProducerConnection stopped transport 
+ 
