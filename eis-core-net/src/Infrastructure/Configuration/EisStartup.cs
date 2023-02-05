@@ -19,8 +19,6 @@ namespace EisCore.Infrastructure.Configuration
         public static IServiceCollection AddEisServices(this IServiceCollection services)
         {
             services.AddSingleton<IConfigurationManager, ConfigurationManager>();
-            services.AddSingleton<IEventInboxOutboxDbContext, EventInboxOutboxDbContext>();
-            services.AddSingleton<ICompetingConsumerDbContext, CompetingConsumerDbContext>();
             services.AddSingleton<IDatabaseBootstrap, DatabaseBootstrap>();
             
             services.AddSingleton<DapperContext>(); 
