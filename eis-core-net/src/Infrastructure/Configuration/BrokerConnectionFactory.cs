@@ -14,6 +14,7 @@ using EisCore.Application.Constants;
 using System.Text.Json;
 using EisCore.Infrastructure.Persistence;
 using EisCore.Application.Util;
+using EisCore.Infrastructure.Persistence.Contracts;
 
 namespace EisCore.Infrastructure.Configuration
 {
@@ -37,18 +38,19 @@ namespace EisCore.Infrastructure.Configuration
         // ConnectionResumedListener connectionResumedListener = null;
         ExceptionListener connectionExceptionListener = null;
 
-        private readonly IEventInboxOutboxDbContext _eventINOUTDbContext;
+        private readonly IEisEventInboxOutboxRepository _eisEventInboxOutboxRepository;
         private EventHandlerRegistry _eventRegistry;
 
         public BrokerConnectionFactory(ILogger<BrokerConnectionFactory> log,
         IConfigurationManager configurationManager, BrokerConfiguration brokerConfig,
-        IEventInboxOutboxDbContext eventINOUTDbContext, EventHandlerRegistry eventHandlerRegistry)
+        EventHandlerRegistry eventHandlerRegistry, IEisEventInboxOutboxRepository eisEventInboxOutboxRepository)
         {
             this._log = log;
             this._configManager = configurationManager;
             this._appSettings = configurationManager.GetAppSettings();
             _brokerConfiguration = _configManager.GetBrokerConfiguration();
             this._eventRegistry = eventHandlerRegistry;
+            _eisEventInboxOutboxRepository = eisEventInboxOutboxRepository;
             var brokerUrl = _configManager.GetBrokerUrl();
             _log.LogInformation("BrokerConnectionFactory >> Initializing broker connections.");
             _log.LogInformation("Broker - {brokerUrl}", brokerUrl);
@@ -56,7 +58,6 @@ namespace EisCore.Infrastructure.Configuration
             IConnectionFactory factory = new Apache.NMS.AMQP.ConnectionFactory(_connecturi);
 
             _factory = factory;
-            _eventINOUTDbContext = eventINOUTDbContext;
             _ConsumerConnection = null;
 
             interruptedListener = new ConnectionInterruptedListener(OnConnectionInterruptedListener);
@@ -197,8 +198,7 @@ namespace EisCore.Infrastructure.Configuration
             }
         }
 
-
-        protected void OnMessage(IMessage receivedMsg)
+        private void OnMessage(IMessage receivedMsg)
         {
             EisEvent eisEvent = null;
             var InboundQueue = _configManager.GetAppSettings().InboundQueue;
@@ -213,7 +213,7 @@ namespace EisCore.Infrastructure.Configuration
                 eisEvent = JsonSerializer.Deserialize<EisEvent>(queueMessage.Text);
                 //TODO check json deserializer exception handling in IN OUT BOX
                 _log.LogInformation("Receiving the message: {eisEvent}", eisEvent.ToString());
-                int recordInsertCount = _eventINOUTDbContext.TryEventInsert(eisEvent, InboundQueue, AtLeastOnceDeliveryDirection.IN).Result;
+                var recordInsertCount = _eisEventInboxOutboxRepository.TryEventInsert(eisEvent, InboundQueue, AtLeastOnceDeliveryDirection.IN).Result;
                 ///If the record is new, and status is 1, then process the data
                 /// 
                 /// 
@@ -221,7 +221,7 @@ namespace EisCore.Infrastructure.Configuration
                 {
                     _log.LogInformation("INBOX::NEW [Insert] status: {a}", recordInsertCount);
                     UtilityClass.ConsumeEvent(eisEvent, InboundQueue, _eventRegistry, _configManager.GetAppSettings().Name, _log);
-                    var updatedStatus = _eventINOUTDbContext.UpdateEventStatus(eisEvent.EventID, TestSystemVariables.PROCESSED,AtLeastOnceDeliveryDirection.IN);
+                    var updatedStatus = _eisEventInboxOutboxRepository.UpdateEventStatus(eisEvent.EventID, TestSystemVariables.PROCESSED,AtLeastOnceDeliveryDirection.IN).Result;
                     _log.LogInformation("INBOX::NEW [Processed] status: {b}", updatedStatus);
                 }
                 else
@@ -235,7 +235,7 @@ namespace EisCore.Infrastructure.Configuration
             catch (Exception ex)
             {
                 receivedMsg.Acknowledge();
-                _eventINOUTDbContext.UpdateEventStatus(eisEvent.EventID, TestSystemVariables.FAILED,AtLeastOnceDeliveryDirection.IN);
+                _eisEventInboxOutboxRepository.UpdateEventStatus(eisEvent.EventID, TestSystemVariables.FAILED,AtLeastOnceDeliveryDirection.IN);
                 _log.LogError("exception in onMessage: {eisEvent}", ex.Message);
                 throw ex;
             }

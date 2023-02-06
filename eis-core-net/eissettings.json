@@ -2,8 +2,8 @@
     "BrokerConfiguration": {     
         "protocol": "amqp://",
         "url": "localhost:5672",
-        "username": "test",     
-        "password":"test",  
+        "username": "admin",     
+        "password":"admin",  
         "CronExpression":"0/20 * 1/1 ? * *",
         "RefreshInterval": 1
     },

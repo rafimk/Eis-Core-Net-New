@@ -7,6 +7,7 @@ using System.Text.Json;
 using Apache.NMS;
 
 using EisCore.Application.Constants;
+using EisCore.Infrastructure.Persistence.Contracts;
 
 namespace EisCore
 {
@@ -14,14 +15,13 @@ namespace EisCore
     {
         private readonly ILogger<EventConsumerService> _log;
         private readonly IConfigurationManager _configManager;
-        private IEventInboxOutboxDbContext _eventINOUTDbContext;
+        private IEisEventInboxOutboxRepository _eisEventInboxOutboxRepository;
 
-        public EventConsumerService(ILogger<EventConsumerService> log, IConfigurationManager configurationManager,
-           IEventInboxOutboxDbContext eventINOUTDbContext)
+        public EventConsumerService(ILogger<EventConsumerService> log, IConfigurationManager configurationManager, IEisEventInboxOutboxRepository eisEventInboxOutboxRepository)
         {
-            this._log = log;
-            this._eventINOUTDbContext = eventINOUTDbContext;
-            this._configManager = configurationManager;
+            _log = log;
+            _configManager = configurationManager;
+            _eisEventInboxOutboxRepository = eisEventInboxOutboxRepository;
         }
 
         public void RunConsumerEventListener(IMessageConsumer consumer)

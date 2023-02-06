@@ -21,18 +21,16 @@ namespace EisCore
         private readonly ILogger<EventPublisherService> _log;
 
         private readonly IMessageQueueManager _messageQueueManager;
-        private readonly IEventInboxOutboxDbContext _eventINOUTDbContext;
 
         protected static TimeSpan receiveTimeout = TimeSpan.FromSeconds(10);
         private bool isDisposed = false;
 
-        public EventPublisherService(ILogger<EventPublisherService> log, IConfigurationManager configManager, IMessageQueueManager messageQueueManager, IEventInboxOutboxDbContext eventINOUTDbContext)
+        public EventPublisherService(ILogger<EventPublisherService> log, IConfigurationManager configManager, IMessageQueueManager messageQueueManager)
         {
 
-            this._log = log;
-            this._configManager = configManager;
-            this._eventINOUTDbContext = eventINOUTDbContext;
-            this._messageQueueManager = messageQueueManager;
+            _log = log;
+            _configManager = configManager;
+            _messageQueueManager = messageQueueManager;
         }
 
 
